@@ -315,19 +315,17 @@ header .navbar ul li a:hover {
 
 .contact .row {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .contact .row .content {
-  flex: 1 1 30rem;
+  flex: 60%;
   padding: 4rem;
   padding-bottom: 0;
 }
 
 .contact .row form {
-  flex: 1 1 45rem;
+  flex: 40%;
   padding: 2rem;
   margin: 2rem;
   margin-bottom: 4rem;
@@ -343,12 +341,12 @@ header .navbar ul li a:hover {
   width: 100%;
 }
 
-.contact .row form .box::placeholder{
-    text-transform: capitalize;
+.contact .row form .box::placeholder {
+  text-transform: capitalize;
 }
 
-.contact .row .content .info .email{
-    text-transform: none;
+.contact .row .content .info .email {
+  text-transform: none;
 }
 
 .contact .row form .message {
@@ -372,7 +370,7 @@ header .navbar ul li a:hover {
   font-weight: normal;
 }
 
-.contact .row .content .info a{
+.contact .row .content .info a {
   text-decoration: none;
   color: #fff;
 }
@@ -382,12 +380,12 @@ header .navbar ul li a:hover {
   color: var(--yellow);
 }
 
-.top{
-    position: fixed;
-    bottom: 2.5rem;
-    right: 0.1rem;
-    z-index: 100;
-    display: none;
+.top {
+  position: fixed;
+  bottom: 2.5rem;
+  right: 0.1rem;
+  z-index: 100;
+  display: none;
 }
 
 /* media queries */
@@ -449,5 +447,12 @@ header .navbar ul li a:hover {
 
   .contact .row form {
     margin: 3rem 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact .row {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
